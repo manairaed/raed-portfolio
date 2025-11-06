@@ -1,0 +1,199 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Raed | My Works</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/themify-icons.css">
+  <link rel="stylesheet" href="css/nice-select.css">
+  <link rel="stylesheet" href="css/flaticon.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/slicknav.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="header-area">
+      <div id="sticky-header" class="main-header-area">
+        <div class="container-fluid">
+          <div class="header_bottom_border">
+            <div class="row align-items-center">
+              <div class="col-xl-3 col-lg-2"></div>
+
+              <div class="col-xl-6 col-lg-7">
+                <div class="main-menu d-none d-lg-block">
+                  <nav>
+                    <ul id="navigation">
+                      <li><a href="index.html">Home</a></li>
+                      <li><a class="active" href="Works.html">Works</a></li>
+                      <li><a href="Services.html">Experience</a></li>
+                      <li><a href="about.html">About</a></li>
+                      <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+
+              <div class="col-xl-3 col-lg-3 d-none d-lg-block">
+                <div class="Appointment">
+                  <div class="book_btn d-none d-lg-block">
+                    <a href="contact.html">Let’s Talk</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <div class="mobile_menu d-block d-lg-none"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Header End -->
+
+  <!-- Gallery Start -->
+<div class="gallery_area">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-12">
+        <div class="section_title mb-50">
+          <h3>My Works</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-xl-10 col-lg-10">
+        <div class="row" id="worksContainer">
+          <!-- Projects injected dynamically -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Gallery End -->
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer_top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="lets_talk">
+              <h3>
+                Do you have any Project?
+                <a href="mailto:manairaed1998@gmail.com">Let’s Talk</a>
+              </h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <!-- Mail -->
+          <div class="col-md-3">
+            <div class="single_links d-flex justify-content-between align-items-center">
+              <a href="mailto:manairaed1998@gmail.com"><span>Mail</span></a>
+              <a href="mailto:manairaed1998@gmail.com"><i class="fa fa-envelope"></i></a>
+            </div>
+            
+          </div>
+
+          <!-- GitHub -->
+          <div class="col-md-3">
+            <div class="single_links d-flex justify-content-between align-items-center">
+              <a href="https://github.com/manairaed" target="_blank"><span>Github</span></a>
+              <a href="https://github.com/manairaed" target="_blank"><i class="fa fa-github"></i></a>
+            </div>
+          </div>
+
+          <!-- LinkedIn -->
+          <div class="col-md-3">
+            <div class="single_links d-flex justify-content-between align-items-center">
+              <a href="https://www.linkedin.com/in/raedmanai/" target="_blank"><span>Linkedin</span></a>
+              <a href="https://www.linkedin.com/in/raedmanai/" target="_blank"><i class="fa fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="copy-right_text">
+      <div class="container">
+        <div class="footer_border"></div>
+        <div class="row">
+          <div class="col-xl-12">
+            <p class="copy_right text-center">
+              Copyright &copy; 2025 Raed Manai
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer End -->
+
+  <!-- JS Files -->
+  <script src="js/vendor/jquery-1.12.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/main.js"></script>
+
+  <script src="works.js"></script>
+<script>
+  const container = document.getElementById("worksContainer");
+
+  // Diviser les works en deux colonnes équilibrées
+  const leftCol = document.createElement("div");
+  leftCol.className = "col-xl-6 col-lg-6 col-md-6";
+
+  const rightCol = document.createElement("div");
+  rightCol.className = "col-xl-6 col-lg-6 col-md-6";
+
+  works.forEach((work, index) => {
+    const delay = 0.1 + index * 0.15;
+
+    const galleryItem = `
+      <div class="single_gallery wow fadeInUp" data-wow-delay="${delay}s">
+        <div class="thumb">
+          <img src="${work.image}" alt="${work.title}" />
+        </div>
+        <div class="gallery_heading">
+          <span>${work.title.split("–")[0]}</span>
+          <a href="works_details.html?id=${work.id}">
+            <h4>${work.titleSection}</h4>
+          </a>
+        </div>
+      </div>
+    `;
+
+    // Répartir les projets entre les deux colonnes
+    if (index % 2 === 0) {
+      leftCol.innerHTML += galleryItem;
+    } else {
+      rightCol.innerHTML += galleryItem;
+    }
+  });
+
+  // Ajouter les colonnes dans le conteneur
+  container.appendChild(leftCol);
+  container.appendChild(rightCol);
+</script>
+ <script>
+  new WOW().init();
+</script>
+
+</body>
+</html>
