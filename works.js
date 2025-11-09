@@ -1,4 +1,4 @@
-const works = [
+window.works = [
   {
     id: 1,
     title : "COMAR SYNC",
@@ -11,7 +11,7 @@ const works = [
       "Manual data processing led to delays, inconsistent records, and limited traceability across multiple insurance contracts and partners.",
     solution:
       "Built a robust full-stack system integrating REST APIs (Spring Boot) with a secure Angular interface. Implemented Python-based large file processing, Keycloak authentication, and a CI/CD pipeline using Jenkins and Docker — improving speed and traceability by over 60%.",
-    image: "img/gallery/ComarSync.png",
+    image: "img/gallery/comar.png",
     technologies: ["Angular", "Spring", "Python", "Docker", "Oracle DB"],
     link: "https://github.com/manairaed/ComarSync"
   },
@@ -27,7 +27,7 @@ const works = [
       "The hotel needed a unified digital solution for growing padel reservations and payment tracking.",
     solution:
       "Developed a Flutter app for user booking and online payments (Flousi integration), plus an Angular dashboard for admin management of bookings and complaints.",
-    image: "img/gallery/2.png",
+    image: "img/gallery/oceana.png",
     technologies: ["Flutter", "Node.js", "Angular", "MongoDB"],
     link: "https://github.com/saifmessaoudi/Oceana_padel_FRONTEND"
   },
@@ -43,7 +43,7 @@ const works = [
       "Manual processes for member registration and event planning were inefficient and error-prone.",
     solution:
       "Developed a centralized system using Spring Boot, Angular, and Flutter with Oracle DB integration to manage members, matches, and schedules.",
-    image: "img/gallery/3.png",
+    image: "img/gallery/neopolis.png",
     technologies: ["Spring Boot", "Flutter", "Angular", "Oracle DB"],
     link: "https://github.com/manairaed/Gestion-association-sportive"
   },

@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,300i,400,500,500i,700,900&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,300i,400,500,500i,700,900&display=swap");
-/* line 1, ../../Arafath/CL/Cl November/228. Resume-02/HTML/scss/_extend.scss */
 .flex-center-start {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -13,13 +12,6 @@
   justify-content: start;
 }
 
-/* Normal desktop :1200px. */
-/* Normal desktop :992px. */
-/* Tablet desktop :768px. */
-/* small mobile :320px. */
-/* Large Mobile :480px. */
-/* 1. Theme default css */
-/* line 5, ../../Arafath/CL/Cl November/228. Resume-02/HTML/scss/theme-default.scss */
 body {
   font-family: "Roboto", sans-serif;
   font-weight: normal;
@@ -115,6 +107,101 @@ a:hover,
 .single_skill:hover .skill_name {
   color: #00c8ff;
   transition: color 0.3s ease;
+}
+
+.works-carousel-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+#worksCarousel .carousel-item {
+  padding: 15px 0;
+}
+
+#worksCarousel .single_gallery {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#worksCarousel .single_gallery:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+#worksCarousel .single_gallery .thumb img {
+  width: 100%;
+  display: block;
+  border-radius: 8px;
+}
+
+#worksCarousel .gallery_heading {
+  padding: 15px 0;
+}
+
+#worksCarousel .gallery_heading span {
+  display: block;
+  font-size: 0.9rem;
+  color: #888;
+  margin-bottom: 5px;
+}
+
+#worksCarousel .gallery_heading h4 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 0;
+  color: #003B48;
+}
+
+#worksCarousel .gallery_heading a:hover h4 {
+  color: #EAA677;
+}
+
+#worksCarousel .carousel-indicators {
+  bottom: -30px;
+}
+
+#worksCarousel .carousel-indicators button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #C0A7AFB7;
+  opacity: 0.8;
+}
+
+#worksCarousel .carousel-indicators .active {
+  background-color: #EAA677;
+  opacity: 1;
+}
+
+#worksCarousel .carousel-control-prev,
+#worksCarousel .carousel-control-next {
+  width: 5%;
+  height: 10%;
+  top: 45%;
+}
+
+#worksCarousel .carousel-control-prev-icon,
+#worksCarousel .carousel-control-next-icon {
+  background-size: 100%, 100%;
+  filter: invert(30%) sepia(1) saturate(5) hue-rotate(190deg);
+}
+
+@media (max-width: 991.98px) {
+  #worksCarousel .col-lg-6 {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  #worksCarousel .gallery_heading h4 {
+    font-size: 1.1rem;
+  }
+  #worksCarousel .gallery_heading span {
+    font-size: 0.8rem;
+  }
 }
 
 /* line 34, ../../Arafath/CL/Cl November/228. Resume-02/HTML/scss/theme-default.scss */
