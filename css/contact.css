@@ -1,0 +1,182 @@
+/* === Contact Page Custom Styles === */
+
+/* Section principale */
+
+.flex-center-start {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: start;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.contact.section {
+    
+  background: linear-gradient(135deg, #311E25 0%, #311E25 100%);
+  padding: 80px 0;
+}
+
+.contact .section-title h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: white; /* ton bleu principal */
+}
+
+.contact .section-title p {
+  max-width: 600px;
+  margin: 10px auto 0;
+  font-size: 16px;
+  color: #6c757d;
+}
+
+/* Boîte d'infos (à gauche) */
+.info-box {
+  background: #fff;
+  border-radius: 16px;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.info-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.1);
+}
+
+.info-box h3 {
+  font-size: 24px;
+  color: white;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.info-box p {
+  font-size: 15px;
+  color: #6c757d;
+}
+
+/* Détails des contacts */
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 18px;
+}
+
+.info-item .icon-box {
+  background-color: #DB8B46;
+  color: #fff;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.info-item .icon-box:hover {
+  background-color: #eaa677; /* ton accent color */
+  transform: scale(1.1);
+}
+
+.info-item .content h5 {
+  font-size: 17px;
+  font-weight: 600;
+  color: #1b232a;
+}
+
+.info-item .content p {
+  font-size: 15px;
+  color: #6c757d;
+  margin-bottom: 2px;
+}
+
+/* Liens sociaux */
+.social-links a {
+  color: #DB8B46;
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #eaa677;
+  transform: translateY(-2px);
+}
+
+/* Formulaire de contact */
+.contact-form {
+  background: #fff;
+  border-radius: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.contact-form:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h3 {
+  font-size: 24px;
+  color: #DB8B46;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.contact-form p {
+  font-size: 15px;
+  color: #6c757d;
+  margin-bottom: 20px;
+}
+
+/* Inputs et textarea */
+.contact-form .form-control {
+  border-radius: 8px;
+  border: 1px solid #dee2e6;
+  font-size: 15px;
+  padding: 12px 15px;
+  transition: all 0.3s ease;
+  box-shadow: none !important;
+}
+
+.contact-form .form-control:focus {
+  border-color: #003b48;
+  box-shadow: 0 0 0 0.1rem rgba(0, 59, 72, 0.25);
+}
+
+/* Bouton d'envoi */
+.contact-form button {
+  background-color: #DB8B46;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #eaa677;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .info-box, .contact-form {
+    margin-top: 20px;
+  }
+
+  .contact .section-title h2 {
+    font-size: 28px;
+  }
+}

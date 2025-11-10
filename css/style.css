@@ -18,6 +18,185 @@ body {
   font-style: normal;
 }
 
+.skill-box {
+      background-color: #fff;
+      box-shadow: 5px 4px 15px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .skill-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .skill-logo {
+      width: 50px;
+      margin-bottom: 10px;
+    }
+
+    .progress {
+      height: 10px;
+      border-radius: 5px;
+      background-color: #e9ecef;
+      overflow: hidden;
+    }
+
+    .progress-bar {
+      height: 100%;
+      line-height: 10px;
+      font-size: 0.75rem;
+      color: #fff;
+      text-align: center;
+      transition: width 1.5s ease-in-out, background-color 0.3s;
+    }
+
+    .unordered-list {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+
+    .boxed-btn3-line {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 25px;
+      border: 2px solid #003B48;
+      border-radius: 30px;
+      color: #003B48;
+      text-decoration: none;
+      transition: all 0.3s;
+    }
+
+    .boxed-btn3-line:hover {
+      background-color: #003B48;
+      color: #fff;
+    }
+
+/* === HERO SECTION === */
+.hero {
+  padding: 120px 0;
+  background: linear-gradient(135deg, #311E25 0%, #311E25 100%);
+  color: #fff;
+  overflow: hidden;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.hero h1 .highlight {
+  color: #EAA677;
+}
+
+.hero h2 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #f5f5f5;
+}
+
+.hero .btn-primary {
+  background-color: #EAA677;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.hero .btn-primary:hover {
+  background-color: #FABF35;
+  color: #003B48;
+}
+
+.hero .btn-outline-light {
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.hero .btn-outline-light:hover {
+  background-color: #fff;
+  color: #003B48;
+}
+
+.social-links a {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-right: 15px;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #EAA677;
+}
+
+.hero-image img {
+  width: 300px;
+  max-width: 100%;
+  border: 5px solid #EAA677;
+}
+
+.floating-elements {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.floating-card {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  color: #fff;
+  border-radius: 10px;
+  padding: 8px 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  animation: float 6s ease-in-out infinite;
+}
+
+.floating-card i {
+  font-size: 1.2rem;
+}
+
+.floating-card.design { top: 15%; left: -10%; animation-delay: 0s; }
+.floating-card.code { bottom: 10%; right: -10%; animation-delay: 2s; }
+.floating-card.creativity { top: 80%; left: 20%; animation-delay: 4s; }
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .hero {
+    text-align: center;
+    padding: 80px 0;
+  }
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+  .hero h2 {
+    font-size: 1.3rem;
+  }
+  .floating-card {
+    display: none;
+  }
+}
+
 .img {
   max-width: 100%;
   -webkit-transition: 0.3s;
@@ -2580,7 +2759,7 @@ h3 {
   font-size: 36px;
   color: #fff;
   line-height: 46px;
-  margin-bottom: 60px;
+  margin-top: 80px;
 }
 
 @media (max-width: 767px) {
@@ -3255,6 +3434,7 @@ h3 {
   font-size: 27px;
   font-weight: 600;
   margin-bottom: 20px;
+  margin-top :100px;
 }
 
 /* line 53, ../../Arafath/CL/Cl November/228. Resume-02/HTML/scss/_contact.scss */

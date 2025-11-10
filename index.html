@@ -21,6 +21,8 @@
   <link rel="stylesheet" href="css/animate.css" />
   <link rel="stylesheet" href="css/slick.css" />
   <link rel="stylesheet" href="css/slicknav.css" />
+  <link rel="stylesheet" href="css/fonts/bootstrap-icons.css">
+
 
   <!-- Main Styles -->
   <link rel="stylesheet" href="css/style.css" />
@@ -66,43 +68,86 @@
   </header>
 
   <!-- Slider Area -->
-  <div class="slider_area">
-    <div class="single_slider d-flex align-items-center slider_bg_1">
-      <div class="container">
-        <div class="row align-items-center position-relative">
-          <!-- Text Block -->
-          <div class="col-lg-9 col-md-8">
-            <div class="slider_text">
-              <h3>
-                Hi there, I am Raed <br />
-                <span>Software Engineer</span>
-              </h3>
-              <a class="boxed-btn3-line" href="works.html">View Works</a>
-            </div>
+  <!-- =======================
+     HERO SECTION
+======================== -->
+<section id="hero" class="hero section d-flex align-items-center">
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="row gy-4 align-items-center">
+      
+      <!-- Texte gauche -->
+      <div class="col-lg-6 order-2 order-lg-1">
+        <div class="hero-content ">
+          <h1 class="text-white" data-aos="fade-up" data-aos-delay="200">
+            Hello, I'm <span class="highlight">Raed Manai</span>
+          </h1>
+          
+          <h2 class="text-white" data-aos="fade-up" data-aos-delay="300">
+            Creative <span class="typed" data-typed-items="Full Stack Developer, Web Engineer, Mobile Engineer"></span>
+          </h2>
+
+          <p data-aos="fade-up" data-aos-delay="400">
+            I'm a software engineer specialized in building modern mobile and web apps using Flutter and Node.js. I love creating intuitive, elegant, and high-performance digital experiences.
+          </p>
+
+          <div class="hero-actions mt-4" data-aos="fade-up" data-aos-delay="500">
+            <a href="works.html" class="btn btn-primary me-3">View My Work</a>
+            <a href="contact.html" class="btn btn-outline-light">Get In Touch</a>
           </div>
-          <!-- Image Block -->
-          <div class="col-lg-3 col-md-4 text-center wow fadeInUp" data-wow-delay="0.1s">
-            <div class="my_img d-flex justify-content-center">
-              <img src="img/banner/profile-pic.png" alt="Raed Manai" class="profile-photo" />
+
+          <div class="social-links mt-4" data-aos="fade-up" data-aos-delay="600">
+            <a href="https://github.com/manairaed" target="_blank"><i class="bi bi-github"></i></a>
+            <a href="https://www.linkedin.com/in/raedmanai" target="_blank"><i class="bi bi-linkedin"></i></a>
+            <a href="mailto:manairaed1998@gmail.com"><i class="bi bi-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Image droite -->
+      <div class="col-lg-6 order-1 order-lg-2 text-center">
+        <div class="hero-image" data-aos="zoom-in" data-aos-delay="300">
+          <div class="image-wrapper position-relative">
+            <img src="img/banner/profile-pic.png" alt="Raed Manai" class="img-fluid rounded-circle shadow-lg">
+            
+            <!-- Floating elements -->
+            <div class="floating-elements">
+              <div class="floating-card design" data-aos="fade-left" data-aos-delay="700">
+                <i class="bi bi-phone"></i>
+                <span>Mobile</span>
+              </div>
+              <div class="floating-card code" data-aos="fade-right" data-aos-delay="800">
+                <i class="bi bi-code-slash"></i>
+                <span>Code</span>
+              </div>
+              <div class="floating-card creativity" data-aos="fade-up" data-aos-delay="900">
+                <i class="bi bi-lightbulb"></i>
+                <span>Ideas</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
+
     </div>
   </div>
+</section>
+
 
   <!-- Download Area -->
-  <div class="download_area">
+  <section id="about" class="download_area py-5">
     <div class="container">
-      <div class="row">
+      <div class="row mb-4" data-wow-delay="fade-up">
         <div class="col-xl-10">
-          <div class="download_text">
-            <h3>I’m a passionate Software Engineer specialized in mobile and web development.</h3>
+          <div class="download_text mb-40">
+            <h3>
+              I’m a passionate Software Engineer specialized in mobile and web development.
+            </h3>
           </div>
         </div>
       </div>
+
       <div class="row">
-        <!-- Left text block -->
+        <!-- Left Text -->
         <div class="col-lg-6 col-md-6">
           <div class="download_left">
             <p>
@@ -110,13 +155,12 @@
               <strong>Flutter</strong>, <strong>Node.js</strong>, <strong>Angular</strong>, and <strong>Spring Boot</strong>, I focus on building secure, scalable, and intuitive applications that deliver real value.
             </p>
             <p>
-              Curious and driven by innovation, I enjoy exploring new technologies and finding elegant ways to solve complex problems. From developing an
-              <strong>insurance automation system</strong> to a <strong>padel reservation platform</strong> and <strong>interactive admin dashboards</strong>, I’ve built end-to-end solutions that blend technical precision with great user experience.
+              Curious and driven by innovation, I enjoy exploring new technologies and finding elegant ways to solve complex problems. From developing an <strong>insurance automation system</strong> to a <strong>padel reservation platform</strong> and <strong>interactive admin dashboards</strong>, I’ve built end-to-end solutions that blend technical precision with great user experience.
             </p>
 
             <h3 class="mb-20 text-white">💡 What I bring</h3>
-            <div class="text-white">
-              <ul class="unordered-list">
+            <div>
+              <ul class="unordered-list text-white">
                 <li>Full-stack development for mobile and web applications</li>
                 <li>Robust backend architecture with REST APIs, CI/CD pipelines, and secure authentication</li>
                 <li>Modern, responsive, and user-friendly interfaces</li>
@@ -129,44 +173,92 @@
           </div>
         </div>
 
-        <!-- Right skills block -->
-        <div class="col-lg-5 offset-lg-1 col-md-6 text-white">
-          <div class="skills_list">
-            <h3 class="text-header-02 mb-4 text-white">⚙️ Tech Stack & Skills</h3>
+        <!-- Right Skills -->
+        <div class="col-lg-6 col-md-6">
+          <section id="skills" class="skills section">
+            <div class="container">
+              <h2 class="mb-3 text-white">Skills</h2>
+              <p class="mb-4 text-white">My technical skillset that powers the applications I build.</p>
 
-            <div class="single_skill d-flex align-items-center mb-4 wow fadeIn" data-wow-delay="0.1s">
-              <img src="img/about/flutter.png" alt="Flutter Logo" class="skill_logo me-4" />
-              <span class="skill_name fs-5">Dart / Flutter</span>
+              <div class="row g-4 skills-animation">
+
+                <!-- Skill 1: Flutter -->
+                <div class="col-md-6 col-lg-6">
+                  <div class="skill-box">
+                    <img src="img/about/flutter.png" alt="Flutter Logo" class="skill-logo" loading="lazy">
+                    <div class="progress mt-2">
+                      <div class="progress-bar bg-primary" role="progressbar" aria-label="Flutter skill 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:0%">60%</div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Skill 2: Node.js -->
+                <div class="col-md-6 col-lg-6">
+                  <div class="skill-box">
+                    <img src="img/about/Node.png" alt="Node.js Logo" class="skill-logo" loading="lazy">
+                    <div class="progress mt-2">
+                      <div class="progress-bar bg-success" role="progressbar" aria-label="Node.js skill 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:0%">80%</div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Skill 3: Angular -->
+                <div class="col-md-6 col-lg-6">
+                  <div class="skill-box">
+                    <img src="img/about/angular.png" alt="Angular Logo" class="skill-logo" loading="lazy">
+                    <div class="progress mt-2">
+                      <div class="progress-bar bg-danger" role="progressbar" aria-label="Angular skill 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:0%">75%</div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Skill 4: Spring Boot -->
+                <div class="col-md-6 col-lg-6">
+                  <div class="skill-box">
+                    <img src="img/about/spring_boot.png" alt="Spring Boot Logo" class="skill-logo" loading="lazy">
+                    <div class="progress mt-2">
+                      <div class="progress-bar bg-warning" role="progressbar" aria-label="Spring Boot skill 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:0%">80%</div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Skill 5: SQL -->
+                <div class="col-md-6 col-lg-6">
+                  <div class="skill-box">
+                    <img src="img/about/SQL.png" alt="SQL Logo" class="skill-logo" loading="lazy">
+                    <div class="progress mt-2">
+                      <div class="progress-bar bg-info" role="progressbar" aria-label="SQL skill 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:0%">85%</div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Skill 6: Docker -->
+                <div class="col-md-6 col-lg-6">
+                  <div class="skill-box">
+                    <img src="img/about/docker.png" alt="Docker Logo" class="skill-logo" loading="lazy">
+                    <div class="progress mt-2">
+                      <div class="progress-bar bg-secondary" role="progressbar" aria-label="Docker skill 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:0%">70%</div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Skill 7: Jenkins -->
+                <div class="col-md-6 col-lg-6">
+                  <div class="skill-box">
+                    <img src="img/about/jenkins.png" alt="Jenkins Logo" class="skill-logo" loading="lazy">
+                    <div class="progress mt-2">
+                      <div class="progress-bar bg-dark" role="progressbar" aria-label="Jenkins skill 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width:0%">65%</div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
             </div>
-            <div class="single_skill d-flex align-items-center mb-4 wow fadeIn" data-wow-delay="0.2s">
-              <img src="img/about/spring_boot.png" alt="Spring Boot Logo" class="skill_logo me-4" />
-              <span class="skill_name fs-5">Java / Spring Boot</span>
-            </div>
-            <div class="single_skill d-flex align-items-center mb-4 wow fadeIn" data-wow-delay="0.3s">
-              <img src="img/about/angular.png" alt="Angular Logo" class="skill_logo me-4" />
-              <span class="skill_name fs-5">JavaScript / Angular</span>
-            </div>
-            <div class="single_skill d-flex align-items-center mb-4 wow fadeIn" data-wow-delay="0.4s">
-              <img src="img/about/Node.png" alt="Node.js Logo" class="skill_logo me-4" />
-              <span class="skill_name fs-5">Node.js / Next.js</span>
-            </div>
-            <div class="single_skill d-flex align-items-center mb-4 wow fadeIn" data-wow-delay="0.5s">
-              <img src="img/about/SQL.png" alt="SQL Logo" class="skill_logo me-4" />
-              <span class="skill_name fs-5">SQL</span>
-            </div>
-            <div class="single_skill d-flex align-items-center mb-4 wow fadeIn" data-wow-delay="0.6s">
-              <img src="img/about/docker.png" alt="Docker Logo" class="skill_logo me-4" />
-              <span class="skill_name fs-5">Docker</span>
-            </div>
-            <div class="single_skill d-flex align-items-center mb-4 wow fadeIn" data-wow-delay="0.7s">
-              <img src="img/about/jenkins.png" alt="Jenkins Logo" class="skill_logo me-4" />
-              <span class="skill_name fs-5">Jenkins</span>
-            </div>
-          </div>
+          </section>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
   <!-- Service / Experience Area -->
   <div class="service_area">
@@ -343,6 +435,52 @@
   <script src="js/vendor/jquery-1.12.4.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/wow.min.js"></script>
+
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<!-- Typed.js -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+<script>
+  AOS.init({
+    duration: 800,
+    once: true
+  });
+
+  // Typed.js init
+  const typed = document.querySelector('.typed');
+  if (typed) {
+    const typedItems = typed.getAttribute('data-typed-items').split(',');
+    new Typed('.typed', {
+      strings: typedItems,
+      typeSpeed: 80,
+      backSpeed: 40,
+      backDelay: 2000,
+      loop: true
+    });
+  }
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const bars = document.querySelectorAll('.progress-bar');
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const bar = entry.target;
+            bar.style.width = bar.getAttribute('aria-valuenow') + '%';
+            observer.unobserve(bar);
+          }
+        });
+      }, { threshold: 0.5 });
+
+      bars.forEach(bar => {
+        bar.style.width = '0';
+        observer.observe(bar);
+      });
+    });
+  </script>
+
 
   <!-- Plugins -->
   <script src="js/jquery.ajaxchimp.min.js"></script>
